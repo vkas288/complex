@@ -3,7 +3,7 @@ service:
   - docker
 
 before_install:
-  -docker build -t vkas288/complex-test -f ./client/Dockerfile.dev ./client
+  - docker build -t vkas288/complex-test -f ./client/Dockerfile.dev ./client
 
 dcript:
   - docker run vkas288/complex npm run test -- --coverage
